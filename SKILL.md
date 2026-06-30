@@ -12,7 +12,7 @@ metadata:
 
 # AngleCraft - Content Perspective Engine
 
-> **Tagline:** Same topic, different lens. Turn what you know into what they want to watch.
+> **Tagline:** Same topic, different lens. Turn what you know into what they want to consume.
 > **Version:** 2.0
 > **Language-agnostic:** Works with any language.
 > **Mode:** Quick transform by default; Deep strategy on request.
@@ -192,6 +192,8 @@ Useful and sales-oriented content follows. But it *starts* with interest. This i
 
 **Trigger:** User provides a topic, product, or content idea and asks for angle suggestions.
 
+**Always default to Quick Mode unless one or more Deep Mode triggers are present.** If unsure, re-read the user's message and check the triggers below.
+
 **Procedure:**
 1. Identify the core topic and niche.
 2. Scan the message for emotional charge, audience type, platform hints.
@@ -203,7 +205,13 @@ Useful and sales-oriented content follows. But it *starts* with interest. This i
 
 ### Deep Mode
 
-**Trigger:** User explicitly requests strategy, OR provides complex business context, OR asks to audit existing content.
+**Trigger (at least one must be present):**
+- User explicitly requests "strategy," "audit," "roadmap," or a "deep" analysis.
+- User provides multi-paragraph business context (niche + audience + past attempts + goals).
+- User provides existing content and asks "why isn't this working" or "how can this be better."
+- User asks to map angles across an entire content calendar or multiple topics at once.
+
+**If none of these triggers are met, stay in Quick Mode.** Complex context without an explicit strategy request still defaults to Quick — but you may note at the end: "If you'd like a full Deep Mode roadmap mapping angles across tiers and platforms, just flag it."
 
 **Procedure:**
 1. Ask clarifying questions (1-3 max): audience, niche, platform, what's been tried before.
@@ -221,11 +229,22 @@ Useful and sales-oriented content follows. But it *starts* with interest. This i
 
 | Topic | Angle | Hook | Tier | Platform |
 |---|---|---|---|---|
-| Why invoices are still manual in 2026 | Level Error | "It's not a software problem. It's a trust problem." | Trust | Blog, LinkedIn |
+| Why invoices are still manual in [current year] | Level Error | "It's not a software problem. It's a trust problem." | Trust | Blog, LinkedIn |
 | "AI will take accounting jobs" | Myth vs Reality | "AI won't replace accountants. It'll replace accountants who only type numbers." | Reach | Twitter, LinkedIn |
 | The hidden cost of cheap AP tools | Price of Solution | "Your $29/month invoice tool is costing you $3,000/month in errors. Here's the math." | Conversion | Blog, Newsletter |
 | When to automate vs when to keep manual | Conditions | "If invoices under $500 → automate. If enterprise contracts → one wrong digit costs the deal." | Conversion | Landing page |
 | The real reason finance teams resist change | Hidden Driver | "They're not lazy. Their bonus depends on zero errors, and they don't trust your tool yet." | Trust | LinkedIn, Video |
+
+---
+
+## LANGUAGE HANDLING
+
+This skill is language-agnostic. When the user writes in a language other than English:
+
+1. **Respond in the user's language.** Match their language for all framing, explanations, and surrounding text.
+2. **Hooks may stay in the target publication language.** If the user's content will be published in English (common for global audiences), write hooks in English. If they publish in the user's language, translate hooks too. When in doubt, offer hooks in both languages.
+3. **Angle logic is language-independent.** The 7+2 taxonomy works the same way regardless of language. The cognitive mechanisms (surprise, paradox, curiosity gap) are universal.
+4. **Cultural references must localize.** A "Versailles" analogy means nothing to a Korean audience. Replace Western-centric examples with locally resonant ones when you know the target market.
 
 ---
 
@@ -261,18 +280,19 @@ If a hook fails all 3, discard it and try a different angle type.
 - **Fake paradox** - Paradox only works when the contradiction is genuine, not a forced rhetorical trick.
 - **Vague conditions** - Conditions angle fails if the decision branches are generic ("if you want results, work hard"). Branches must be concrete and actionable.
 - **Misaligned platform** - A Historical Lens hook that needs 2 minutes of setup fails on TikTok. Match angle type to format using the Selection Matrix.
+- **Generic AI voice** - If a hook sounds like it could have been written by any AI for any niche, it fails. Replace template phrases ("unlock your potential", "in today's fast-paced world", "game-changer") with niche-specific, concrete language. Every hook must contain at least one detail that only an expert in *this* niche would know.
 
 ---
 
 ## CULTURAL ADAPTATION
 
-Angles are language-agnostic, but emotional resonance varies by culture:
+Angles are language-agnostic, but emotional resonance varies by audience:
 
-- **Contrary Thesis & Myth vs Reality** - strong in individualist cultures (US, Western Europe, Australia). In high-conformity cultures (Japan, Korea), soften the tone: frame as "an alternative view" rather than "everyone is wrong."
-- **Paradox & Level Error** - universal. Cognitive pattern violations are cross-cultural.
-- **Historical Lens** - leverage local history, not Western defaults. A Japanese audience connects to Edo-period references, not Versailles.
-- **Price of Solution** - strong in risk-averse cultures (Germany, Nordics). Weaker where aspirational messaging dominates (India, Brazil).
-- When uncertain, default to **Conditions** and **Hidden Driver** - they have the broadest cross-cultural fit.
+- **Contrary Thesis & Myth vs Reality** — strong when the audience values individualism and debate. Where group harmony is a higher priority, soften the tone: frame as "an alternative view" rather than "everyone is wrong." When in doubt, observe how local media and creators in that market handle disagreement.
+- **Paradox & Level Error** — universal. Cognitive pattern violations are cross-cultural.
+- **Historical Lens** — leverage local history, not Western defaults. A Japanese audience connects to Edo-period references, not Versailles. A Brazilian audience connects to their own heritage, not European analogies.
+- **Price of Solution** — effectiveness depends on whether the audience prioritizes risk mitigation or aspirational messaging. When uncertain, present both sides: the cost of doing X and the cost of not doing X.
+- When uncertain, default to **Conditions** and **Hidden Driver** — they have the broadest cross-cultural fit.
 
 ---
 
