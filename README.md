@@ -1,11 +1,9 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/version-2.0-blue" alt="Version 2.0">
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
-  <img src="https://img.shields.io/badge/angles-7%2B2-orange" alt="7+2 Angles">
-  <img src="https://img.shields.io/badge/compatibility-any%20LLM-purple" alt="Any LLM">
-</p>
+# AngleCraft — Content Perspective Engine
 
-# AngleCraft - Content Perspective Engine
+[![Version](https://img.shields.io/badge/version-2.0-blue)]()
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Angles](https://img.shields.io/badge/angles-7%2B2-orange)]()
+[![Compatibility](https://img.shields.io/badge/compatibility-any%20LLM-purple)]()
 
 > **Same topic, different lens. Turn what you know into what they want to watch.**
 
