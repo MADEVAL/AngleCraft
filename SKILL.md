@@ -1,11 +1,11 @@
 ---
 name: anglecraft
-description: "Content angle generator for turning dry expert topics into high-engagement infotainment. Applies 7 journalistic angle types (Myth vs Reality, Paradox, Level Error, Price of Solution, Conditions, Hidden Driver, Contrary Thesis) + historical/future lens + news-hook framing. Use when experts need their content to become interesting rather than just informative - blog posts, video scripts, social content, newsletters, landing pages, ad hooks. For any niche: B2B, B2C, services, products, personal brand."
+description: "Content angle generator that turns dry expert topics into high-engagement infotainment. Applies 7 core angles (Myth vs Reality, Paradox, Level Error, Price of Solution, Conditions, Hidden Driver, Contrary Thesis) plus 3 foundational lenses (Historical, Future, News Hook) = 10 angles total. Use for blog posts, video scripts, social content, newsletters, landing pages, and ad hooks in any niche: B2B, B2C, services, products, personal brand. Do NOT use for SEO briefs (RankWise), persuasion/copy audits (MindFluence), or rewriting AI text (HumanAI)."
 license: MIT
 compatibility: any-llm
 metadata:
-  version: "2.0"
-  angles: "7+2"
+  version: "2.1.0"
+  angles: "7+3"
   language: any
   modes: "2"
 ---
@@ -13,161 +13,67 @@ metadata:
 # AngleCraft - Content Perspective Engine
 
 > **Tagline:** Same topic, different lens. Turn what you know into what they want to consume.
-> **Version:** 2.0
-> **Language-agnostic:** Works with any language.
-> **Mode:** Quick transform by default; Deep strategy on request.
+> **Version:** 2.1.0 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
 
 ---
 
 ## CORE IDEA
 
-Most experts produce useful but dull content. They tell you *what* - but not *how* to make it interesting. The difference between a post that gets 200 views and one that gets 200,000 is rarely the topic. It's the **angle**: the perspective from which you enter the topic.
+Most experts produce useful but dull content. They explain *what* and forget *how to make it interesting*. The difference between 200 views and 200,000 is rarely the topic - it is the **angle**: the perspective from which you enter the topic.
 
-Think of a topic as a building. You can photograph it from the main facade and say "here it is." Or you can shoot it from the rooftop, from inside, reflected in a puddle, from a helicopter. Same building - dozens of completely different photographs. Same topic - completely different content experiences.
+A topic is a building. You can photograph the facade, the rooftop, the reflection in a puddle, or the view from a helicopter. Same building, completely different photographs. Same topic, completely different content.
 
----
-
-## WHY INTEREST COMES FIRST
-
-Interest is the entry gate to your content funnel. The more people find your content interesting, the more will:
-1. See it
-2. Watch/read to the end
-3. Trust you
-4. Eventually buy
-
-Useful and sales-oriented content follows. But it *starts* with interest. This is **infotainment**: information + entertainment. People are curious primates - they love learning new things in a light, visually rich, story-driven format.
+Interest is the entry gate: people must notice, finish, and trust before they buy. This skill generates the angle and the hook. It does not write the full piece.
 
 ---
 
-## THE ANGLE TAXONOMY
+## WHEN NOT TO USE
 
-### 0. Foundation Angles (Use Anytime)
+This skill stops at the angle + hook + outline layer. Hand off when the request is really about something else:
 
-**Historical Lens** - How was it in the past? Not "best perfumes this summer" but "what fragrances did Marie Antoinette wear at Versailles?" People devour historical pop-science content.
+| Request | Use instead |
+|---|---|
+| SEO brief, keyword map, meta tags, ranking audit | RankWise |
+| Persuasion audit, cognitive-bias optimization, tone tuning of existing copy | MindFluence |
+| Rewriting AI text so it sounds human | HumanAI |
+| Full article, script, or landing page after the angle is chosen | Write it directly; do not stretch this skill past hooks and outlines |
+| Fact-checking or original research | A research/browsing tool; this skill never invents sources |
 
-**Future Lens** - Where is it going? What developments are underway? What will this niche look like in 5-10 years?
-
-**News Hook / Story Bridge** - Take a fascinating fact, news item, or story from your niche. Tell that story. Bridge it to your topic. Example: the story of how a Japanese company invented a medical massager that consumers repurposed for an entirely different use → bridge to the lesson that businesses often misunderstand their real customer use-cases.
-
----
-
-### 1. MYTH vs REALITY
-
-**Pattern:** Everyone says X. In reality, Y works - and here's why.
-
-**Target:** Sacred cows of the niche - established dogmas nobody dares to question. What beliefs are outdated but unchallenged? What "truths" make everyone in the niche silently suffer?
-
-**Why it works:** You're touching the untouchable. It triggers emotion, debate, and sharing. People defend their sacred cows, others feel relieved someone finally said it.
-
-**Examples:**
-- "Everyone says the key to good therapy is unconditional ethics. Here's when that backfires."
-- "The common advice is to post every day. Here's why consistency is killing your content quality."
+If a handoff request arrives inside an angle request, deliver the angles first, then state the handoff in one line.
 
 ---
 
-### 2. PARADOX
+## THE 7+3 TAXONOMY
 
-**Pattern:** The more X, the worse Y. / Counter-intuitive pattern.
+### Core angles (7)
 
-**Target:** Assumptions people hold that are logically reversed from reality.
+| # | Angle | Pattern | Use when |
+|---|---|---|---|
+| 1 | **Myth vs Reality** | "Everyone says X. In reality, Y." | A prevalent belief is false or outdated and you can correct it. |
+| 2 | **Paradox** | "The more X, the worse Y." | Two variables genuinely move in opposite directions. |
+| 3 | **Level Error** | "You think the problem is X. It is actually Y." | The stated problem is a symptom of a cause on another level. |
+| 4 | **Price of Solution** | "Yes, X works. Here is what it really costs." | A solution carries hidden trade-offs nobody mentions. |
+| 5 | **Conditions** | "If A, do X. If B, do Y." | The right answer depends on the reader's situation. |
+| 6 | **Hidden Driver** | "X happens because of Y." | An expert-only mechanism explains a visible effect. |
+| 7 | **Contrary Thesis** | "Do not do X. Do the opposite." | Mainstream advice is calcified; the contrarian case is honestly held. |
 
-**Why it works:** The brain is wired to notice pattern violations. A paradox forces cognitive re-evaluation - it's sticky.
+`Conditions` is a decision structure, not a perspective. Use it when segmentation itself is the insight; do not force it onto topics without real branches.
 
-**Examples:**
-- "The harder you try on each video, the worse your content performs overall."
-- "The more features you add, the fewer customers convert."
-- "The cheaper your service, the harder it is to sell."
+### Foundation lenses (3)
 
----
+| # | Lens | Pattern | Use when |
+|---|---|---|---|
+| 8 | **Historical Lens** | "How did we get here?" | History or origin explains the present. |
+| 9 | **Future Lens** | "Where is this going in 5-10 years?" | Trajectory, change, or urgency is the point. |
+| 10 | **News Hook** | Real event or fact → bridge to the topic | A current story genuinely connects to the lesson. |
 
-### 3. LEVEL ERROR
-
-**Pattern:** You think the problem is X. The real cause is Y - on a completely different level.
-
-**Target:** Symptoms people are treating while the root cause sits untouched in another domain.
-
-**Why it works:** It reframes the reader's entire understanding of their problem. Delivers actual insight rather than surface advice.
-
-**Examples:**
-- "You think you're not creating content because of imposter syndrome. The real reason: you lack raw material and don't know what to say."
-- "You think clients aren't booking because your prices are too high. The real cause: you never built trust before showing the price."
-- "You think you have imposter syndrome. In reality, your skills genuinely need improvement."
+Each pattern has a "why it works", three examples, and close-angle discrimination rules in `references/angles.md`. Read it when two angles look similar or when the niche is unfamiliar.
 
 ---
 
-### 4. PRICE OF SOLUTION
+## SELECTION MATRIX
 
-**Pattern:** Yes, X works. But here's what you're really paying - and nobody talks about it.
-
-**Target:** The hidden costs, trade-offs, and uncomfortable truths behind any solution, choice, or delay.
-
-**Why it works:** Honest trade-off talk builds massive credibility. People are tired of "X solves everything" pitches. They crave the full picture.
-
-**Examples:**
-- "Yes, content marketing works. The price: it's a full-time production operation - scripting, analytics, filming, editing."
-- "Yes, outsourcing saves time. The price: you lose direct customer signal and the product drifts away from users."
-- "Yes, staying in your comfort zone feels safe. The price: your competitors are learning while you're standing still."
-
----
-
-### 5. APPLICABILITY CONDITIONS
-
-**Pattern:** If situation A → do X. If situation B → do Y. (Decision tree / segmentation.)
-
-**Target:** Audiences who need "does this apply to me?" answered immediately.
-
-**Why it works:** People scan for themselves. When they find their situation, they lock in. This format also screens out bad-fit leads automatically.
-
-**Examples:**
-- "If you have a team → delegate content. If you're solo → batch-produce one format you can sustain."
-- "If your mole looks like this → see a dermatologist. If it looks like this → it's normal."
-- "If you sell services → lead with case studies. If you sell products → lead with transformations."
-
----
-
-### 6. HIDDEN DRIVER
-
-**Pattern:** The real reason X happens is Y - impossible to guess without deep experience in this niche.
-
-**Target:** Non-obvious causal chains visible only to an expert with accumulated pattern recognition.
-
-**Why it works:** Delivers genuine insider insight. Makes the reader feel they just unlocked secret knowledge. High "aha!" factor.
-
-**Examples:**
-- "Clients aren't booking your junior stylists - not because they're worse, but because your entire page only talks about YOU."
-- "Your ad creative isn't the problem. The problem is you're showing people a product for a job they don't realize they need done."
-
----
-
-### 7. CONTRARY THESIS
-
-**Pattern:** Don't do X. Do the opposite. Here's the honest case for why.
-
-**Target:** Mainstream advice that has calcified into unexamined dogma.
-
-**Why it works:** Going against the current generates heat. Debates in comments = algorithmic fuel. But it must be an *honest* contrarian take - not provocation for its own sake.
-
-**Examples:**
-- "Don't niche down. Generalize first, find what resonates, then narrow."
-- "Don't optimize for SEO. Optimize for one real human reading, and search engines will follow."
-- "Don't build an audience. Build relationships with 10 people who would pay you today."
-
----
-
-## ANGLE SELECTION & DISCRIMINATION
-
-### Distinguishing Close Angles
-
-**Myth vs Reality vs Contrary Thesis (angles #1 and #7):**
-- *Myth vs Reality* corrects a false belief: "Everyone believes X, but the truth is Y." The reader *thinks* X; you reveal Y.
-- *Contrary Thesis* prescribes opposite behavior: "The standard advice is X, but you should do NOT-X." The reader *does* X; you tell them to stop and replace with Y.
-- *Hidden Driver* reveals a hidden cause: "X happens, but not for the reason you think." Reader sees the effect; you expose the real mechanism.
-
-**Paradox vs Level Error (angles #2 and #3):**
-- *Paradox*: two variables move in opposite directions (more A → less B). A structural contradiction.
-- *Level Error*: the problem is misdiagnosed - symptom vs root cause. A category mistake.
-
-### Selection Matrix
+### By goal
 
 | Goal | Prioritize |
 |---|---|
@@ -177,99 +83,116 @@ Useful and sales-oriented content follows. But it *starts* with interest. This i
 | Intellectual depth / authority | Level Error, Historical Lens, Future Lens |
 | Immediate relevance | News Hook |
 
+### By platform
+
 | Platform | Prioritize |
 |---|---|
-| Short-form (TikTok, Reels, Shorts) | Paradox, Myth vs Reality - hooks fit 3 seconds |
-| Long-form (YouTube, blog, newsletter) | Level Error, Hidden Driver, Historical Lens - needs build-up |
-| Ad / landing page | Price of Solution, Conditions - addresses objections |
-| LinkedIn / B2B | Contrary Thesis, Level Error, Hidden Driver - professional insight |
+| Short-form (TikTok, Reels, Shorts) | Paradox, Myth vs Reality |
+| Long-form (YouTube, blog, newsletter) | Level Error, Hidden Driver, Historical Lens |
+| Ad / landing page | Price of Solution, Conditions |
+| LinkedIn / B2B | Contrary Thesis, Level Error, Hidden Driver |
+
+### By funnel tier
+
+- **Reach** (broad appeal, sharing): Myth vs Reality, Paradox, Contrary Thesis, News Hook
+- **Trust** (depth, credibility): Level Error, Hidden Driver, Price of Solution, Historical Lens
+- **Conversion** (objection handling, self-selection, urgency): Conditions, Future Lens
+
+Tiers describe the funnel role of a piece; the goal matrix describes the user's immediate intent. They can overlap (Future Lens is both depth and a conversion/urgency play).
 
 ---
 
 ## OPERATING MODES
 
-### Quick Mode (Default)
+### Quick Mode (default)
 
-**Trigger:** User provides a topic, product, or content idea and asks for angle suggestions.
+**Trigger:** the user provides a topic, product, or content idea and asks for angles.
 
-**Always default to Quick Mode unless one or more Deep Mode triggers are present.** If unsure, re-read the user's message and check the triggers below.
+**Always default to Quick Mode unless at least one Deep Mode trigger is present.**
 
 **Procedure:**
-1. Identify the core topic and niche.
-2. Scan the message for emotional charge, audience type, platform hints.
-3. Generate 3-5 angle variants across different types from the taxonomy.
-4. For each angle, provide: angle type, hook line (first sentence / headline), and 1-2 sentence direction.
-5. Output as a clean table or bullet list.
 
-**No questions asked.** Just produce angles. If the topic is too broad (e.g., "marketing", "health"), narrow it to a representative sub-angle or ask for a 1-sentence refinement.
+1. Identify the core topic and niche.
+2. Note the audience, platform, and emotional charge already present in the message.
+3. Generate 3-5 angle variants across different types from the taxonomy.
+4. For each: angle type, hook line, and a 1-2 sentence direction.
+5. Output using the Quick Mode table in the Output Contract.
+
+**No clarifying questions in Quick Mode.** Produce angles immediately. If the topic is too broad ("marketing", "health"), pick the most commercially specific sub-topic, state the assumption in one line ("Assuming you mean B2B SaaS content marketing"), and offer to redo it for a narrower topic. Never stall waiting for a refinement.
 
 ### Deep Mode
 
 **Trigger (at least one must be present):**
-- User explicitly requests "strategy," "audit," "roadmap," or a "deep" analysis.
-- User provides multi-paragraph business context (niche + audience + past attempts + goals).
-- User provides existing content and asks "why isn't this working" or "how can this be better."
-- User asks to map angles across an entire content calendar or multiple topics at once.
 
-**If none of these triggers are met, stay in Quick Mode.** Complex context without an explicit strategy request still defaults to Quick — but you may note at the end: "If you'd like a full Deep Mode roadmap mapping angles across tiers and platforms, just flag it."
+- The user explicitly requests "strategy", "audit", "roadmap", "content plan", or a "deep" analysis.
+- The user provides multi-paragraph business context (niche + audience + past attempts + goals) **and** asks for a plan, roadmap, or diagnosis.
+- The user provides existing content and asks "why isn't this working" or "how can this be better".
+- The user asks to map angles across a content calendar or multiple topics at once.
+
+**If none of these triggers are met, stay in Quick Mode.** Business context alone is not a trigger: if the user just describes their business and asks for angles, produce Quick Mode and optionally close with: "If you'd like a full Deep Mode roadmap across tiers and platforms, flag it."
 
 **Procedure:**
-1. Ask clarifying questions (1-3 max): audience, niche, platform, what's been tried before.
-2. Identify niche sacred cows - scan for unexamined beliefs, universal "rules" everyone repeats, advice no one questions. Ask yourself: "What does every [niche] expert say that might be outdated or incomplete?"
-3. Map the 7+2 angle taxonomy against each topic. Test every angle type for fit; discard any with no genuine entry point.
-4. Recommend a strategic mix with rationale - spread across three tiers:
-   - **Reach** (broad appeal, viral potential): Myth vs Reality, Paradox, Contrary Thesis
-   - **Trust** (expert depth, credibility): Level Error, Hidden Driver, Price of Solution
-   - **Conversion** (objection handling, self-selection): Conditions, Future Lens, News Hook
-5. Deliver as a content roadmap: topic → angle → hook → tier (reach/trust/conversion) → platform recommendation.
 
-**Example input:** "I run a SaaS for automated invoice processing. Our content is all feature comparisons - boring."
+1. Check what is missing: audience, niche, platform, goal, prior attempts. Ask 1-3 questions **only** for missing information. If enough is supplied, state assumptions in one line and proceed.
+2. Identify niche sacred cows - beliefs everyone repeats but nobody questions. Ask: "What does every [niche] expert say that might be outdated or incomplete?"
+3. Map the 7+3 taxonomy against each topic. Test every angle; discard any with no genuine entry point.
+4. Recommend a mix across Reach / Trust / Conversion with a one-line rationale.
+5. Deliver the Deep Mode roadmap from the Output Contract.
 
-**Deep Mode output:**
+A full worked Deep Mode example is in `references/examples.md`; ready-made niche outputs are in `examples/`; input-to-mode routing is in `scenarios/`.
+
+---
+
+## OUTPUT CONTRACT
+
+### Quick Mode output
+
+| # | Angle | Hook | Direction |
+|---|-------|------|-----------|
+
+- 3-5 rows. If the user asks for more, deliver up to 7 per batch and offer another batch; never repeat a hook.
+- Hook: one sentence, 30 words maximum, in the publication language (fall back to the user's language).
+- Direction: 1-2 sentences on how the piece unfolds; do not write the full piece.
+- Add one `Assumption:` line only when you had to narrow an ambiguous topic.
+- Add one `Replace bracketed placeholders with verified data before publishing.` line only when placeholders are used.
+
+### Deep Mode output
 
 | Topic | Angle | Hook | Tier | Platform |
 |---|---|---|---|---|
-| Why invoices are still manual in [current year] | Level Error | "It's not a software problem. It's a trust problem." | Trust | Blog, LinkedIn |
-| "AI will take accounting jobs" | Myth vs Reality | "AI won't replace accountants. It'll replace accountants who only type numbers." | Reach | Twitter, LinkedIn |
-| The hidden cost of cheap AP tools | Price of Solution | "Your $29/month invoice tool is costing you $3,000/month in errors. Here's the math." | Conversion | Blog, Newsletter |
-| When to automate vs when to keep manual | Conditions | "If invoices under $500 → automate. If enterprise contracts → one wrong digit costs the deal." | Conversion | Landing page |
-| The real reason finance teams resist change | Hidden Driver | "They're not lazy. Their bonus depends on zero errors, and they don't trust your tool yet." | Trust | LinkedIn, Video |
+
+- 5-10 rows covering at least two different funnel tiers.
+- Add an `Assumptions:` line when audience, platform, or goal was inferred.
+- Add a `Data to verify:` line listing every placeholder used.
+
+### Cross-mode rules
+
+- **Canonical angle names stay in English** so they map to the taxonomy. When responding in another language, translate the surrounding text and keep the angle name, e.g. `Myth vs Reality` or `Myth vs Reality / Миф против реальности` on first use.
+- **Language:** respond in the user's language; hooks follow the publication language. If the publication language is unknown, write hooks in the user's language.
+- **Scope:** this skill produces angles and hooks, not full articles. If the user asks for a full draft, output a short outline (hook + 3-5 beats) first and ask whether to expand.
+- **No padding:** no preamble, no restating the request, no "here are some ideas" filler.
+- **Mode marker:** optional plain-text line such as `AngleCraft - Quick Mode` or `AngleCraft - Deep Mode`. Skip it inside an ongoing conversation or when the user prefers terse output.
+- **Failure:** if no angle passes the Quality Gate, say which criteria failed and what input would unlock a usable angle. Do not output generic filler.
 
 ---
 
-## LANGUAGE HANDLING
+## QUALITY GATE
 
-This skill is language-agnostic. When the user writes in a language other than English:
-
-1. **Respond in the user's language.** Match their language for all framing, explanations, and surrounding text.
-2. **Hooks may stay in the target publication language.** If the user's content will be published in English (common for global audiences), write hooks in English. If they publish in the user's language, translate hooks too. When in doubt, offer hooks in both languages.
-3. **Angle logic is language-independent.** The 7+2 taxonomy works the same way regardless of language. The cognitive mechanisms (surprise, paradox, curiosity gap) are universal.
-4. **Cultural references must localize.** A "Versailles" analogy means nothing to a Korean audience. Replace Western-centric examples with locally resonant ones when you know the target market.
-
----
-
-## AGENT INTERNAL WORKFLOW
-
-When processing any angle request, the agent follows this pipeline internally:
-
-1. **Extract the core topic** - strip modifiers, reduce to bare subject.
-2. **Run the lens filter** - mentally test all 7+2 angle types; discard those with no fit.
-3. **Select top angles** - apply the Selection Matrix above; prioritize based on stated or inferred platform, audience, and goal.
-4. **Write the hook line** - 1 sentence that embodies the angle with maximum curiosity or emotion.
-5. **Outline the direction** - 1-2 sentences on how the angle unfolds (not the full piece).
-6. **Output** - present in table format (Quick Mode) or roadmap format (Deep Mode).
-
----
-
-## ANGLE QUALITY CHECK
-
-Before outputting, score each hook against these 3 criteria:
+Before outputting, score every hook:
 
 1. **Surprise** - does it contradict a common assumption or reveal non-obvious information?
-2. **Specificity** - is it anchored in a concrete detail, or is it vague/generic?
-3. **Curiosity gap** - does the reader *need* to know what comes next?
+2. **Specificity** - is it anchored in a concrete mechanism, trade-off, or decision rule? (Specificity is not permission to invent numbers.)
+3. **Curiosity gap** - does the reader need to know what comes next?
 
-If a hook fails all 3, discard it and try a different angle type.
+A hook must pass all three criteria to ship. If it fails any one, revise it or try another angle type. Cap retries at two per angle; if the topic still cannot pass, return the best hook plus a note about what data would make it stronger.
+
+### Fact discipline
+
+- Never invent statistics, prices, dates, study results, client outcomes, quotes, or expert mechanisms.
+- If a hook needs a number the user did not provide, write a placeholder: `[X]`, `[$X]`, `[timeframe]`, `[source]`.
+- When placeholders are used, add one line: "Replace bracketed placeholders with verified data before publishing."
+- Label hypothetical examples as hypothetical. Never present a made-up case study, testimonial, or benchmark as real.
+- If a claim is central to the angle and cannot be verified or safely generalized, choose a different angle.
 
 ---
 
@@ -278,75 +201,54 @@ If a hook fails all 3, discard it and try a different angle type.
 - **Contrarian for shock value** - Contrary Thesis must be honestly held, not manufactured for engagement.
 - **Strawman myth** - Myth vs Reality fails if the "myth" is something nobody actually believes. Attack real, prevalent beliefs.
 - **Fake paradox** - Paradox only works when the contradiction is genuine, not a forced rhetorical trick.
-- **Vague conditions** - Conditions angle fails if the decision branches are generic ("if you want results, work hard"). Branches must be concrete and actionable.
-- **Misaligned platform** - A Historical Lens hook that needs 2 minutes of setup fails on TikTok. Match angle type to format using the Selection Matrix.
-- **Generic AI voice** - If a hook sounds like it could have been written by any AI for any niche, it fails. Replace template phrases ("unlock your potential", "in today's fast-paced world", "game-changer") with niche-specific, concrete language. Every hook must contain at least one detail that only an expert in *this* niche would know.
+- **Vague conditions** - Conditions fails if the branches are generic ("if you want results, work hard"). Branches must be concrete and actionable.
+- **Misaligned platform** - A Historical Lens hook that needs two minutes of setup fails on TikTok. Match angle to format.
+- **Generic AI voice** - Replace "unlock your potential", "in today's fast-paced world", and "game-changer" with niche-specific language. Every hook needs a detail an expert in *this* niche would recognize - a mechanism, trade-off, or decision rule. If none exists, use a placeholder instead of inventing one.
+- **Fabricated specificity** - Invented numbers, fake case studies, and made-up quotes are worse than vagueness. Use `[X]` placeholders and flag them.
+- **Angle stuffing** - Do not force all ten angles onto one topic. Three strong, distinct angles beat seven overlapping ones.
 
 ---
 
-## CULTURAL ADAPTATION
+## LANGUAGE & CULTURE
 
-Angles are language-agnostic, but emotional resonance varies by audience:
+1. **Respond in the user's language.** Match their language for framing, explanations, and surrounding text.
+2. **Hooks follow the publication language.** If the content will be published in English, write hooks in English; if in the user's language, translate them. When in doubt, offer both.
+3. **Angle logic is language-independent.** Surprise, paradox, and curiosity gaps work across languages; the wording must not be a literal translation of an English template.
+4. **Localize references.** A Versailles analogy means nothing to a Korean audience. Use local history, media, and examples when the target market is known.
+5. **Do not stereotype by country.** Base cultural choices on the specific audience and evidence, not nationality defaults. When uncertain, prefer universal mechanisms (Paradox, Level Error) or decision framing (Conditions).
+6. **Localize everything the user sees** - refusals, disclaimers, placeholder notes, and the mode marker. Only canonical angle names stay in English.
 
-- **Contrary Thesis & Myth vs Reality** — strong when the audience values individualism and debate. Where group harmony is a higher priority, soften the tone: frame as "an alternative view" rather than "everyone is wrong." When in doubt, observe how local media and creators in that market handle disagreement.
-- **Paradox & Level Error** — universal. Cognitive pattern violations are cross-cultural.
-- **Historical Lens** — leverage local history, not Western defaults. A Japanese audience connects to Edo-period references, not Versailles. A Brazilian audience connects to their own heritage, not European analogies.
-- **Price of Solution** — effectiveness depends on whether the audience prioritizes risk mitigation or aspirational messaging. When uncertain, present both sides: the cost of doing X and the cost of not doing X.
-- When uncertain, default to **Conditions** and **Hidden Driver** — they have the broadest cross-cultural fit.
-
----
-
-## MODE SIGNALING
-
-Optionally, you may open the response with a short plain-text mode marker so the user knows which mode is active:
-```
-AngleCraft - Quick Mode
-```
-or
-```
-AngleCraft - Deep Mode (identifying niche sacred cows and mapping the angle stack)
-```
-
-Keep it plain text. Do not use emoji or decorative prefixes unless the user has asked for them. If a marker would add noise (e.g. inside an ongoing conversation, or when the user prefers terse output), skip it and go straight to the angles.
+Detailed cultural notes are in `references/angles.md`.
 
 ---
 
-## EXAMPLES
+## ETHICS & REFUSAL
 
-**Input topic:** "We sell handmade ceramic mugs."
+Do **not** generate angles for:
 
-**Quick Mode output:**
+- Pseudoscience presented as fact (you may use Myth vs Reality only to debunk it).
+- Hate speech, discrimination, or content targeting vulnerable groups.
+- Get-rich-quick, gambling, or predatory financial schemes.
+- Unproven medical, legal, or financial claims presented as professional advice.
 
-| # | Angle Type | Hook | Direction |
-|---|-----------|------|-----------|
-| 1 | Myth vs Reality | "Everyone says handmade mugs are overpriced. Here's what 40 hours of craft actually looks like." | Break down the production process to justify value |
-| 2 | Historical Lens | "This 400-year-old Japanese firing technique still can't be replicated by machines." | Story of a specific craft tradition behind the product |
-| 3 | Paradox | "The more 'perfect' a handmade mug looks, the less it's worth." | The premium value of visible human imperfection |
-| 4 | Hidden Driver | "Cheap mugs break because of a design flaw you've never noticed. Here's the 3-second test." | Expert material science insight that explains the price gap |
-| 5 | Contrary Thesis | "Stop buying matching mug sets. Here's why mismatched is the real luxury." | Reframe from uniformity to curated individuality |
+**Sensitive-topic rule:** angles are framing devices, not professional advice. For health, legal, financial, or safety topics, never imply a diagnosis, treatment, guaranteed return, or legal outcome. Keep hooks to general education, add a clear "not professional advice" disclaimer to the final content, and prefer behavioral or decision-framing angles over outcome promises.
 
----
+**Refusal message:** reply in the user's language.
 
-**Input topic:** "I'm a fitness coach. People struggle to lose weight despite working out."
-
-**Quick Mode output:**
-
-| # | Angle Type | Hook | Direction |
-|---|-----------|------|-----------|
-| 1 | Level Error | "You don't have a workout problem. You have a cortisol problem." | Reframe from exercise quantity to stress management |
-| 2 | Price of Solution | "Yes, extreme diets shred fat fast. The bill comes in hormones, metabolism, and sanity." | The hidden long-term cost of aggressive cuts |
-| 3 | Conditions | "If your sleep is under 7 hours, don't touch cardio. If you're rested, here's the protocol." | Decision-tree based on recovery status |
-| 4 | Myth vs Reality | "Spot reduction is a lie. But here's what bodybuilders actually do to shape specific areas." | Debunk the myth, then give the real (slower) answer |
-| 5 | Paradox | "The people who lose the most weight track the least." | The counter-intuitive case against obsessive calorie counting |
+- English: "I can't generate angles for this topic - it falls outside ethical content boundaries. If you have a related legitimate topic, I'm happy to help."
+- Russian: "Не могу сгенерировать углы для этой темы - она выходит за этические границы контента. Если есть смежная легитимная тема, помогу."
+- Other languages: translate the English template.
 
 ---
 
-## REFUSAL POLICY
+## REFERENCES
 
-Do NOT generate angles for:
-- Topics promoting pseudoscience as fact (present it as myth vs reality *only* if debunking)
-- Hate speech, discrimination, or content targeting vulnerable groups
-- Get-rich-quick, gambling, or predatory financial schemes
-- Unproven medical claims presented as treatment advice
+Read only when needed; the core skill is self-contained.
 
-**Refusal message:** "I can't generate angles for this topic - it falls outside ethical content boundaries. If you have a related legitimate topic, I'm happy to help."
+| File | Read when |
+|---|---|
+| `references/angles.md` | You need full "why it works", more examples, close-angle discrimination, or cultural notes. |
+| `references/examples.md` | You need a complete worked Quick or Deep Mode output. |
+| `examples/` | You want a ready output for a specific niche. |
+| `scenarios/` | The request is ambiguous and you need mode/handoff routing. |
+| `evals/` | You are testing or changing the skill. |
