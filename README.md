@@ -3,8 +3,9 @@
 [![Version](https://img.shields.io/badge/version-2.1.0-blue)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Angles](https://img.shields.io/badge/angles-7%2B3-orange)](#the-73-angle-taxonomy)
-[![Compatibility](https://img.shields.io/badge/compatibility-any%20LLM-purple)](#compatibility)
+[![Compatibility](https://img.shields.io/badge/compatibility-plain%20markdown-purple)](#compatibility)
 [![CI](https://github.com/MADEVAL/AngleCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/MADEVAL/AngleCraft/actions/workflows/ci.yml)
+[![skills.sh](https://img.shields.io/badge/skills.sh-listed-2ea44f)](https://www.skills.sh/madeval/anglecraft)
 
 > **Same topic, different lens. Turn what you know into what they want to watch.**
 
@@ -135,7 +136,7 @@ Every hook is scored on three criteria:
 2. **Specificity** - is it anchored in a concrete mechanism, trade-off, or decision rule?
 3. **Curiosity gap** - does the reader need to know what comes next?
 
-Specificity never means inventing facts. If a hook needs a number that was not supplied, AngleCraft writes a `[X]` placeholder and tells you to replace it with verified data before publishing. No fake statistics, case studies, or testimonials.
+Specificity never means inventing facts. If a hook needs a number that was not supplied, AngleCraft writes a `[N]` placeholder and tells you to replace it with verified data before publishing. No fake statistics, case studies, or testimonials.
 
 ---
 
@@ -147,7 +148,7 @@ AngleCraft works at the idea layer: angles, hooks, and outlines. It is not a ful
 |---|---|
 | SEO briefs, keyword maps, ranking audits | [RankWise](https://github.com/MADEVAL/RankWise) |
 | Persuasion audits and cognitive-bias copy optimization | [MindFluence](https://github.com/MADEVAL/MindFluence) |
-| Rewriting AI text to sound human | [HumanAI](https://github.com/MADEVAL/HumanAI) |
+| Rewriting AI text to sound human | [human-ai](https://github.com/MADEVAL/Natural-skill) |
 | Full article or script after the angle is chosen | Write it directly |
 | Fact-checking or source research | A research/browsing tool - AngleCraft never invents sources |
 
@@ -222,6 +223,6 @@ MIT - free to use, modify, and distribute. See [`LICENSE`](LICENSE).
 
 - **[RankWise](https://github.com/MADEVAL/RankWise)** - SEO content engine with 49 ranking factors
 - **[MindFluence](https://github.com/MADEVAL/MindFluence)** - Marketing copy using 20 cognitive biases
-- **[HumanAI](https://github.com/MADEVAL/HumanAI)** - Rewriting AI text to sound human-written (9 languages)
+- **[human-ai](https://github.com/MADEVAL/Natural-skill)** - Rewriting AI text to sound human-written (9 languages)
 
-Pipeline: **AngleCraft** picks the angle and hook → **MindFluence** shapes the persuasive copy → **HumanAI** removes the AI voice → **RankWise** handles search visibility.
+Pipeline: **AngleCraft** picks the angle and hook → **MindFluence** shapes the persuasive copy → **human-ai** removes the AI voice → **RankWise** handles search visibility.

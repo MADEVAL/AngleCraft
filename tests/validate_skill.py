@@ -142,8 +142,8 @@ def main() -> int:
         fail("metadata.angles must be '7+3'")
     if meta.get("license") != "MIT":
         fail("frontmatter license must be MIT")
-    if meta.get("compatibility") != "any-llm":
-        fail("frontmatter compatibility must be any-llm")
+    if meta.get("compatibility") != "Plain Markdown. No external dependencies.":
+        fail("frontmatter compatibility must describe a plain-Markdown environment")
 
     # Required sections
     for section in REQUIRED_SECTIONS:
@@ -256,7 +256,7 @@ def main() -> int:
         "Output failure behavior": "Failure:" in skill_text,
         "Deep trigger guard": "Business context alone is not a trigger" in skill_text,
         "Quick no-questions rule": "No clarifying questions in Quick Mode" in skill_text,
-        "Handoff table": "RankWise" in skill_text and "MindFluence" in skill_text and "HumanAI" in skill_text,
+        "Handoff table": "RankWise" in skill_text and "MindFluence" in skill_text and "human-ai" in skill_text,
     }
     for label, ok in checks.items():
         if not ok:

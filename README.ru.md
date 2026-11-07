@@ -3,8 +3,9 @@
 [![Версия](https://img.shields.io/badge/version-2.1.0-blue)](CHANGELOG.md)
 [![Лицензия](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Углы](https://img.shields.io/badge/angles-7%2B3-orange)](#таксономия-73)
-[![Совместимость](https://img.shields.io/badge/compatibility-any%20LLM-purple)](#совместимость)
+[![Совместимость](https://img.shields.io/badge/compatibility-plain%20markdown-purple)](#совместимость)
 [![CI](https://github.com/MADEVAL/AngleCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/MADEVAL/AngleCraft/actions/workflows/ci.yml)
+[![skills.sh](https://img.shields.io/badge/skills.sh-listed-2ea44f)](https://www.skills.sh/madeval/anglecraft)
 
 > **Одна тема - разные линзы. Превратите то, что вы знаете, в то, что хотят смотреть.**
 
@@ -135,7 +136,7 @@ Quick Mode отвечает без уточняющих вопросов. Есл
 2. **Конкретность** - есть ли механизм, компромисс или правило решения?
 3. **Разрыв любопытства** - хочется ли узнать, что дальше?
 
-Конкретность не означает выдумывание фактов. Если для хука нужна цифра, которой нет, AngleCraft ставит `[X]` и просит заменить её проверенными данными. Никаких фейковых статистик, кейсов и отзывов.
+Конкретность не означает выдумывание фактов. Если для хука нужна цифра, которой нет, AngleCraft ставит `[N]` и просит заменить её проверенными данными. Никаких фейковых статистик, кейсов и отзывов.
 
 ---
 
@@ -147,7 +148,7 @@ AngleCraft работает на уровне идей: углы, хуки, ст
 |---|---|
 | SEO-брифы, карта ключевых слов, аудит ранжирования | [RankWise](https://github.com/MADEVAL/RankWise) |
 | Аудит убедительности и оптимизация копирайта | [MindFluence](https://github.com/MADEVAL/MindFluence) |
-| Очеловечивание AI-текста | [HumanAI](https://github.com/MADEVAL/HumanAI) |
+| Очеловечивание AI-текста | [human-ai](https://github.com/MADEVAL/Natural-skill) |
 | Полная статья или сценарий после выбора угла | Пишите напрямую |
 | Проверка фактов и research | Инструмент с доступом к источникам |
 
@@ -219,6 +220,6 @@ MIT - свободно использовать, изменять и распр�
 
 - **[RankWise](https://github.com/MADEVAL/RankWise)** - SEO-движок с 49 факторами ранжирования
 - **[MindFluence](https://github.com/MADEVAL/MindFluence)** - маркетинговый копирайт на 20 когнитивных искажениях
-- **[HumanAI](https://github.com/MADEVAL/HumanAI)** - очеловечивание AI-текста (9 языков)
+- **[human-ai](https://github.com/MADEVAL/Natural-skill)** - очеловечивание AI-текста (9 языков)
 
-Пайплайн: **AngleCraft** выбирает угол и хук → **MindFluence** усиливает убедительность → **HumanAI** убирает AI-голос → **RankWise** отвечает за поисковую видимость.
+Пайплайн: **AngleCraft** выбирает угол и хук → **MindFluence** усиливает убедительность → **human-ai** убирает AI-голос → **RankWise** отвечает за поисковую видимость.

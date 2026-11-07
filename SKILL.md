@@ -1,9 +1,10 @@
 ---
 name: anglecraft
-description: "Content angle generator that turns dry expert topics into high-engagement infotainment. Applies 7 core angles (Myth vs Reality, Paradox, Level Error, Price of Solution, Conditions, Hidden Driver, Contrary Thesis) plus 3 foundational lenses (Historical, Future, News Hook) = 10 angles total. Use for blog posts, video scripts, social content, newsletters, landing pages, and ad hooks in any niche: B2B, B2C, services, products, personal brand. Do NOT use for SEO briefs (RankWise), persuasion/copy audits (MindFluence), or rewriting AI text (HumanAI)."
+description: "Content angle generator that turns dry expert topics into high-engagement infotainment. Applies 7 core angles (Myth vs Reality, Paradox, Level Error, Price of Solution, Conditions, Hidden Driver, Contrary Thesis) plus 3 foundational lenses (Historical, Future, News Hook) = 10 angles total. Use for blog posts, video scripts, social content, newsletters, landing pages, and ad hooks in any niche: B2B, B2C, services, products, personal brand. Do NOT use for SEO briefs (RankWise), persuasion/copy audits (MindFluence), or rewriting AI text (human-ai)."
 license: MIT
-compatibility: any-llm
+compatibility: Plain Markdown. No external dependencies.
 metadata:
+  author: Yevhen Leonidov
   version: "2.1.0"
   angles: "7+3"
   language: any
@@ -35,7 +36,7 @@ This skill stops at the angle + hook + outline layer. Hand off when the request 
 |---|---|
 | SEO brief, keyword map, meta tags, ranking audit | RankWise |
 | Persuasion audit, cognitive-bias optimization, tone tuning of existing copy | MindFluence |
-| Rewriting AI text so it sounds human | HumanAI |
+| Rewriting AI text so it sounds human | human-ai |
 | Full article, script, or landing page after the angle is chosen | Write it directly; do not stretch this skill past hooks and outlines |
 | Fact-checking or original research | A research/browsing tool; this skill never invents sources |
 
@@ -189,7 +190,8 @@ A hook must pass all three criteria to ship. If it fails any one, revise it or t
 ### Fact discipline
 
 - Never invent statistics, prices, dates, study results, client outcomes, quotes, or expert mechanisms.
-- If a hook needs a number the user did not provide, write a placeholder: `[X]`, `[$X]`, `[timeframe]`, `[source]`.
+- If a hook needs a number the user did not provide, write a placeholder: `[N]`, `[$N]`, `[timeframe]`, `[source]`.
+- Canonical placeholder vocabulary across the skill set: `[N]` and `[$N]` for missing numbers, `[timeframe]`, `[source]`, `[VERIFY: ...]` for a claim to check, `[DATA NEEDED: ...]` for a missing block of input, `[illustrative]` for hypothetical examples.
 - When placeholders are used, add one line: "Replace bracketed placeholders with verified data before publishing."
 - Label hypothetical examples as hypothetical. Never present a made-up case study, testimonial, or benchmark as real.
 - If a claim is central to the angle and cannot be verified or safely generalized, choose a different angle.
@@ -204,7 +206,7 @@ A hook must pass all three criteria to ship. If it fails any one, revise it or t
 - **Vague conditions** - Conditions fails if the branches are generic ("if you want results, work hard"). Branches must be concrete and actionable.
 - **Misaligned platform** - A Historical Lens hook that needs two minutes of setup fails on TikTok. Match angle to format.
 - **Generic AI voice** - Replace "unlock your potential", "in today's fast-paced world", and "game-changer" with niche-specific language. Every hook needs a detail an expert in *this* niche would recognize - a mechanism, trade-off, or decision rule. If none exists, use a placeholder instead of inventing one.
-- **Fabricated specificity** - Invented numbers, fake case studies, and made-up quotes are worse than vagueness. Use `[X]` placeholders and flag them.
+- **Fabricated specificity** - Invented numbers, fake case studies, and made-up quotes are worse than vagueness. Use `[N]` placeholders and flag them.
 - **Angle stuffing** - Do not force all ten angles onto one topic. Three strong, distinct angles beat seven overlapping ones.
 
 ---

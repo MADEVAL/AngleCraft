@@ -14,7 +14,7 @@
 
 > I can pick the angle and hook, but this request is mostly SEO and humanization.
 > Angle: Level Error - "The keyword is not the problem. The search intent is."
-> Handoff: RankWise for the brief/meta, HumanAI for the voice.
+> Handoff: RankWise for the brief/meta, human-ai for the voice.
 
 **Routing table:**
 
@@ -22,7 +22,7 @@
 |---|---|
 | SEO brief, keywords, meta, ranking audit | RankWise |
 | Persuasion audit, bias optimization, tone of existing copy | MindFluence |
-| Humanizing AI text | HumanAI |
+| Humanizing AI text | human-ai |
 | Angle, hook, outline | AngleCraft |
 
 **Do not:**
