@@ -7,8 +7,8 @@ metadata:
   author: Yevhen Leonidov
   version: "2.2.0"
   angles: "7+3"
-  language: any
-  modes: "2"
+  languages: "any"
+  modes: 2
   repository: "https://github.com/MADEVAL/AngleCraft"
 ---
 
@@ -254,4 +254,4 @@ Read only when needed; the core skill is self-contained.
 | `references/examples.md` | You need a complete worked Quick or Deep Mode output. |
 | `examples/` | You want a ready output for a specific niche. |
 | `scenarios/` | The request is ambiguous and you need mode/handoff routing. |
-| `evals/` | You are testing or changing the skill. |
+| `../../evals/` | You are testing or changing the skill (repository root, dev only). |

@@ -1,5 +1,7 @@
 # AngleCraft - Content Perspective Engine
 
+\[ **English** | [Русский](README.ru.md) \]
+
 [![Version](https://img.shields.io/badge/version-2.2.0-blue)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Angles](https://img.shields.io/badge/angles-7%2B3-orange)](#the-73-angle-taxonomy)
@@ -9,7 +11,7 @@
 
 > **Same topic, different lens. Turn what you know into what they want to watch.**
 
-AngleCraft is an AI skill that turns dry expert topics into high-engagement content by applying 7 core angles and 3 foundational lenses (10 angles total). Give it a topic - it returns hooks built to earn attention, with placeholders instead of invented facts.
+AngleCraft is an AI skill that turns dry expert topics into high-engagement content by applying 7 core angles and 3 foundational lenses (10 angles total). **Skill class:** lean - a compact routing file plus on-demand references. Give it a topic - it returns hooks built to earn attention, with placeholders instead of invented facts.
 
 **Source of truth:** [`SKILL.md`](skills/anglecraft/SKILL.md). This README is the human-facing summary; the skill file is what an agent loads.
 
@@ -179,7 +181,7 @@ AngleCraft/
 │   └── agents/openai.yaml   # OpenAI agent manifest
 ├── evals/                   # 20 test topics + rubric (dev)
 ├── tests/                   # structure validator + dataset checker (dev)
-├── install.py               # installer for Claude, OpenCode, Cursor, .agents
+├── install.py               # installer for Claude, OpenCode, Codex, .agents
 ├── run_tests.ps1            # Windows test runner
 ├── CHANGELOG.md
 ├── README.md

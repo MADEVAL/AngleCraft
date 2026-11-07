@@ -7,7 +7,7 @@ All notable changes to AngleCraft are documented here. The format follows [Keep 
 ### Changed
 
 - Moved the runtime skill to `skills/anglecraft/` to match the suite layout.
-- Added `install.py` for Claude Code, OpenCode, Cursor, and the generic `.agents` convention.
+- Added `install.py` for Claude Code, OpenCode, Codex, and the generic `.agents` convention.
 - Added Claude and Cursor plugin manifests and a shared `.editorconfig`.
 - Normalized section headings to Title Case.
 - Added `agents/openai.yaml`.
