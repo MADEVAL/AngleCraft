@@ -152,7 +152,7 @@ AngleCraft работает на уровне идей: углы, хуки, ст
 |---|---|
 | SEO-брифы, карта ключевых слов, аудит ранжирования | [RankWise](https://github.com/MADEVAL/RankWise) |
 | Аудит убедительности и оптимизация копирайта | [MindFluence](https://github.com/MADEVAL/MindFluence) |
-| Очеловечивание AI-текста | [human-ai](https://github.com/MADEVAL/Natural-skill) |
+| Очеловечивание AI-текста | [human-ai](https://github.com/MADEVAL/HumanAI) |
 | Полная статья или сценарий после выбора угла | Пишите напрямую |
 | Проверка фактов и research | Инструмент с доступом к источникам |
 
@@ -227,7 +227,7 @@ MIT - свободно использовать, изменять и распр�
 
 - **[RankWise](https://github.com/MADEVAL/RankWise)** - SEO-движок с 49 факторами ранжирования
 - **[MindFluence](https://github.com/MADEVAL/MindFluence)** - маркетинговый копирайт на 20 когнитивных искажениях
-- **[human-ai](https://github.com/MADEVAL/Natural-skill)** - очеловечивание AI-текста (9 языков)
+- **[human-ai](https://github.com/MADEVAL/HumanAI)** - очеловечивание AI-текста (9 языков)
 
 Пайплайн: **AngleCraft** выбирает угол и хук → **MindFluence** усиливает убедительность → **human-ai** убирает AI-голос → **RankWise** отвечает за поисковую видимость.
 

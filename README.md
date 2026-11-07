@@ -152,7 +152,7 @@ AngleCraft works at the idea layer: angles, hooks, and outlines. It is not a ful
 |---|---|
 | SEO briefs, keyword maps, ranking audits | [RankWise](https://github.com/MADEVAL/RankWise) |
 | Persuasion audits and cognitive-bias copy optimization | [MindFluence](https://github.com/MADEVAL/MindFluence) |
-| Rewriting AI text to sound human | [human-ai](https://github.com/MADEVAL/Natural-skill) |
+| Rewriting AI text to sound human | [human-ai](https://github.com/MADEVAL/HumanAI) |
 | Full article or script after the angle is chosen | Write it directly |
 | Fact-checking or source research | A research/browsing tool - AngleCraft never invents sources |
 
@@ -230,7 +230,7 @@ MIT - free to use, modify, and distribute. See [`LICENSE`](LICENSE).
 
 - **[RankWise](https://github.com/MADEVAL/RankWise)** - SEO content engine with 49 ranking factors
 - **[MindFluence](https://github.com/MADEVAL/MindFluence)** - Marketing copy using 20 cognitive biases
-- **[human-ai](https://github.com/MADEVAL/Natural-skill)** - Rewriting AI text to sound human-written (9 languages)
+- **[human-ai](https://github.com/MADEVAL/HumanAI)** - Rewriting AI text to sound human-written (9 languages)
 
 Pipeline: **AngleCraft** picks the angle and hook → **MindFluence** shapes the persuasive copy → **human-ai** removes the AI voice → **RankWise** handles search visibility.
 

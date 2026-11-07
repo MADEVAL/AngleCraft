@@ -45,7 +45,7 @@ REQUIRED_SECTIONS = [
     "Anti-Patterns",
     "Language & Culture",
     "Ethics & Refusal",
-    "References",
+    "Reference Files",
 ]
 
 FORBIDDEN = [

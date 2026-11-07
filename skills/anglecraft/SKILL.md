@@ -7,7 +7,7 @@ metadata:
   author: Yevhen Leonidov
   version: "2.2.0"
   angles: "7+3"
-  languages: "any"
+  languages: [any]
   modes: 2
   repository: "https://github.com/MADEVAL/AngleCraft"
 ---
@@ -244,7 +244,7 @@ Do **not** generate angles for:
 
 ---
 
-## References
+## Reference Files
 
 Read only when needed; the core skill is self-contained.
 
