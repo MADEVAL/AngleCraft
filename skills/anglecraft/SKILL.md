@@ -5,7 +5,7 @@ license: MIT
 compatibility: Plain Markdown. No external dependencies.
 metadata:
   author: Yevhen Leonidov
-  version: "2.2.1"
+  version: "2.2.2"
   angles: "7+3"
   languages: [any]
   modes: 2
@@ -15,7 +15,7 @@ metadata:
 # AngleCraft - Content Perspective Engine
 
 > **Tagline:** Same topic, different lens. Turn what you know into what they want to consume.
-> **Version:** 2.2.1 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
+> **Version:** 2.2.2 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
 
 ---
 
