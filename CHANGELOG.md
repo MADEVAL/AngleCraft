@@ -2,6 +2,17 @@
 
 All notable changes to AngleCraft are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [2.2.0] - 2026-11-07
+
+### Changed
+
+- Moved the runtime skill to `skills/anglecraft/` to match the suite layout.
+- Added `install.py` for Claude Code, OpenCode, Cursor, and the generic `.agents` convention.
+- Added Claude and Cursor plugin manifests and a shared `.editorconfig`.
+- Normalized section headings to Title Case.
+- Added `agents/openai.yaml`.
+- Hyphens are the only dash character across the documentation.
+
 ## [2.1.0] - 2026-10-30
 
 ### Fixed

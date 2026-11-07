@@ -1,6 +1,6 @@
 # AngleCraft - Content Perspective Engine
 
-[![Version](https://img.shields.io/badge/version-2.1.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.0-blue)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Angles](https://img.shields.io/badge/angles-7%2B3-orange)](#the-73-angle-taxonomy)
 [![Compatibility](https://img.shields.io/badge/compatibility-plain%20markdown-purple)](#compatibility)
@@ -11,7 +11,7 @@
 
 AngleCraft is an AI skill that turns dry expert topics into high-engagement content by applying 7 core angles and 3 foundational lenses (10 angles total). Give it a topic - it returns hooks built to earn attention, with placeholders instead of invented facts.
 
-**Source of truth:** [`SKILL.md`](SKILL.md). This README is the human-facing summary; the skill file is what an agent loads.
+**Source of truth:** [`SKILL.md`](skills/anglecraft/SKILL.md). This README is the human-facing summary; the skill file is what an agent loads.
 
 ---
 
@@ -51,7 +51,7 @@ AngleCraft systematizes that choice, then writes the hook. It stops at the angle
 | 9 | **Future Lens** | Where is this going in 5-10 years? | Urgency, vision |
 | 10 | **News Hook** | Real event → bridge to the lesson | Immediate relevance |
 
-Full patterns, examples, and close-angle discrimination: [`references/angles.md`](references/angles.md).
+Full patterns, examples, and close-angle discrimination: [`references/angles.md`](skills/anglecraft/references/angles.md).
 
 ---
 
@@ -89,10 +89,12 @@ Full patterns, examples, and close-angle discrimination: [`references/angles.md`
 ### Install (global, OpenCode-compatible)
 
 ```bash
-git clone https://github.com/MADEVAL/AngleCraft.git ~/.agents/skills/anglecraft
+git clone https://github.com/MADEVAL/AngleCraft.git
+cd AngleCraft
+python install.py --target all
 ```
 
-`~/.agents/skills` is read by OpenCode and by agents that follow the `.agents` convention. Other supported locations:
+`python install.py` copies `skills/anglecraft/` into the supported locations. Use `--list`, `--check`, or `--target project --dry-run` to inspect the plan. Other supported locations:
 
 | Scope | Path |
 |---|---|
@@ -102,7 +104,7 @@ git clone https://github.com/MADEVAL/AngleCraft.git ~/.agents/skills/anglecraft
 | Claude Code project | `.claude/skills/anglecraft/` |
 | Generic `.agents` | `~/.agents/skills/anglecraft/` or `.agents/skills/anglecraft/` |
 
-Create the directory if needed and copy the repository contents into it. The folder name becomes the skill ID, so keep it lowercase: `anglecraft`.
+To install by hand, copy the contents of `skills/anglecraft/` into the target directory. The folder name becomes the skill ID, so keep it lowercase: `anglecraft`.
 
 ### Use
 
@@ -114,7 +116,7 @@ Quick Mode answers without clarifying questions. If the topic is broad, it state
 
 For a full strategy, ask explicitly: `Need a content strategy for my B2B SaaS.` That triggers Deep Mode.
 
-See [`references/examples.md`](references/examples.md) for complete Quick and Deep outputs.
+See [`references/examples.md`](skills/anglecraft/references/examples.md) for complete Quick and Deep outputs.
 
 ---
 
@@ -167,14 +169,17 @@ AngleCraft works at the idea layer: angles, hooks, and outlines. It is not a ful
 
 ```
 AngleCraft/
-├── SKILL.md                 # runtime skill (source of truth)
-├── references/
-│   ├── angles.md            # full taxonomy, examples, discrimination
-│   └── examples.md          # worked Quick and Deep outputs
-├── examples/                # ready outputs by niche
-├── scenarios/               # input -> mode/handoff routing
-├── evals/                   # 20 test topics + rubric
-├── tests/                   # structure validator + dataset checker
+├── skills/anglecraft/       # runtime skill package
+│   ├── SKILL.md             # source of truth
+│   ├── references/
+│   │   ├── angles.md        # full taxonomy, examples, discrimination
+│   │   └── examples.md      # worked Quick and Deep outputs
+│   ├── examples/            # ready outputs by niche
+│   ├── scenarios/           # input -> mode/handoff routing
+│   └── agents/openai.yaml   # OpenAI agent manifest
+├── evals/                   # 20 test topics + rubric (dev)
+├── tests/                   # structure validator + dataset checker (dev)
+├── install.py               # installer for Claude, OpenCode, Cursor, .agents
 ├── run_tests.ps1            # Windows test runner
 ├── CHANGELOG.md
 ├── README.md
@@ -226,3 +231,15 @@ MIT - free to use, modify, and distribute. See [`LICENSE`](LICENSE).
 - **[human-ai](https://github.com/MADEVAL/Natural-skill)** - Rewriting AI text to sound human-written (9 languages)
 
 Pipeline: **AngleCraft** picks the angle and hook → **MindFluence** shapes the persuasive copy → **human-ai** removes the AI voice → **RankWise** handles search visibility.
+
+---
+
+## GitHub Description
+
+```
+Turn dry expert topics into high-engagement content with 7 core angles + 3 foundational lenses. An AI skill for any LLM, any niche, any language. Skills.sh: https://www.skills.sh/madeval/anglecraft
+```
+
+## GitHub Tags
+
+`agent-skill` `ai-skill` `anglecraft` `content-creation` `content-marketing` `content-strategy` `copywriting` `infotainment` `llm` `marketing` `newsletter` `prompt-engineering` `social-media` `storytelling`

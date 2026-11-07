@@ -1,0 +1,16 @@
+{
+  "name": "anglecraft",
+  "displayName": "AngleCraft",
+  "description": "Content angle generator that turns dry expert topics into high-engagement infotainment.",
+  "version": "2.2.0",
+  "author": {
+    "name": "Yevhen Leonidov",
+    "url": "https://github.com/MADEVAL"
+  },
+  "homepage": "https://github.com/MADEVAL/AngleCraft",
+  "repository": "https://github.com/MADEVAL/AngleCraft",
+  "license": "MIT",
+  "skills": [
+    "./skills/anglecraft"
+  ]
+}

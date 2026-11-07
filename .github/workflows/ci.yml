@@ -40,5 +40,5 @@ jobs:
         with:
           args: >-
             --offline --no-progress --verbose
-            ./README.md ./README.ru.md ./SKILL.md ./CHANGELOG.md
-            ./references ./examples ./scenarios ./evals
+            ./README.md ./README.ru.md ./CHANGELOG.md
+            ./skills/anglecraft ./evals

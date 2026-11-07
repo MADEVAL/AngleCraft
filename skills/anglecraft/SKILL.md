@@ -5,20 +5,21 @@ license: MIT
 compatibility: Plain Markdown. No external dependencies.
 metadata:
   author: Yevhen Leonidov
-  version: "2.1.0"
+  version: "2.2.0"
   angles: "7+3"
   language: any
   modes: "2"
+  repository: "https://github.com/MADEVAL/AngleCraft"
 ---
 
 # AngleCraft - Content Perspective Engine
 
 > **Tagline:** Same topic, different lens. Turn what you know into what they want to consume.
-> **Version:** 2.1.0 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
+> **Version:** 2.2.0 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
 
 ---
 
-## CORE IDEA
+## Core Idea
 
 Most experts produce useful but dull content. They explain *what* and forget *how to make it interesting*. The difference between 200 views and 200,000 is rarely the topic - it is the **angle**: the perspective from which you enter the topic.
 
@@ -28,7 +29,7 @@ Interest is the entry gate: people must notice, finish, and trust before they bu
 
 ---
 
-## WHEN NOT TO USE
+## When Not to Use
 
 This skill stops at the angle + hook + outline layer. Hand off when the request is really about something else:
 
@@ -44,7 +45,7 @@ If a handoff request arrives inside an angle request, deliver the angles first, 
 
 ---
 
-## THE 7+3 TAXONOMY
+## The 7+3 Taxonomy
 
 ### Core angles (7)
 
@@ -72,7 +73,7 @@ Each pattern has a "why it works", three examples, and close-angle discriminatio
 
 ---
 
-## SELECTION MATRIX
+## Selection Matrix
 
 ### By goal
 
@@ -103,7 +104,7 @@ Tiers describe the funnel role of a piece; the goal matrix describes the user's 
 
 ---
 
-## OPERATING MODES
+## Operating Modes
 
 ### Quick Mode (default)
 
@@ -144,7 +145,7 @@ A full worked Deep Mode example is in `references/examples.md`; ready-made niche
 
 ---
 
-## OUTPUT CONTRACT
+## Output Contract
 
 ### Quick Mode output
 
@@ -177,7 +178,7 @@ A full worked Deep Mode example is in `references/examples.md`; ready-made niche
 
 ---
 
-## QUALITY GATE
+## Quality Gate
 
 Before outputting, score every hook:
 
@@ -198,7 +199,7 @@ A hook must pass all three criteria to ship. If it fails any one, revise it or t
 
 ---
 
-## ANTI-PATTERNS
+## Anti-Patterns
 
 - **Contrarian for shock value** - Contrary Thesis must be honestly held, not manufactured for engagement.
 - **Strawman myth** - Myth vs Reality fails if the "myth" is something nobody actually believes. Attack real, prevalent beliefs.
@@ -211,7 +212,7 @@ A hook must pass all three criteria to ship. If it fails any one, revise it or t
 
 ---
 
-## LANGUAGE & CULTURE
+## Language & Culture
 
 1. **Respond in the user's language.** Match their language for framing, explanations, and surrounding text.
 2. **Hooks follow the publication language.** If the content will be published in English, write hooks in English; if in the user's language, translate them. When in doubt, offer both.
@@ -224,7 +225,7 @@ Detailed cultural notes are in `references/angles.md`.
 
 ---
 
-## ETHICS & REFUSAL
+## Ethics & Refusal
 
 Do **not** generate angles for:
 
@@ -243,7 +244,7 @@ Do **not** generate angles for:
 
 ---
 
-## REFERENCES
+## References
 
 Read only when needed; the core skill is self-contained.
 

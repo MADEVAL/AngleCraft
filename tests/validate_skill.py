@@ -15,7 +15,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKILL = ROOT / "SKILL.md"
+SKILL_DIR = ROOT / "skills" / "anglecraft"
+SKILL = SKILL_DIR / "SKILL.md"
 README = ROOT / "README.md"
 README_RU = ROOT / "README.ru.md"
 CHANGELOG = ROOT / "CHANGELOG.md"
@@ -34,17 +35,17 @@ ANGLES = [
 ]
 
 REQUIRED_SECTIONS = [
-    "CORE IDEA",
-    "WHEN NOT TO USE",
-    "THE 7+3 TAXONOMY",
-    "SELECTION MATRIX",
-    "OPERATING MODES",
-    "OUTPUT CONTRACT",
-    "QUALITY GATE",
-    "ANTI-PATTERNS",
-    "LANGUAGE & CULTURE",
-    "ETHICS & REFUSAL",
-    "REFERENCES",
+    "Core Idea",
+    "When Not to Use",
+    "The 7+3 Taxonomy",
+    "Selection Matrix",
+    "Operating Modes",
+    "Output Contract",
+    "Quality Gate",
+    "Anti-Patterns",
+    "Language & Culture",
+    "Ethics & Refusal",
+    "References",
 ]
 
 FORBIDDEN = [
@@ -196,8 +197,8 @@ def main() -> int:
 
     # References and assets
     required = [
-        "references/angles.md",
-        "references/examples.md",
+        "skills/anglecraft/references/angles.md",
+        "skills/anglecraft/references/examples.md",
         "evals/topics.jsonl",
         "evals/rubric.md",
         ".github/workflows/ci.yml",
@@ -215,8 +216,8 @@ def main() -> int:
         if rel not in skill_text:
             fail(f"SKILL.md must link to {rel}")
 
-    examples = sorted((ROOT / "examples").glob("*.md")) if (ROOT / "examples").exists() else []
-    scenarios = sorted((ROOT / "scenarios").glob("*.md")) if (ROOT / "scenarios").exists() else []
+    examples = sorted((SKILL_DIR / "examples").glob("*.md")) if (SKILL_DIR / "examples").exists() else []
+    scenarios = sorted((SKILL_DIR / "scenarios").glob("*.md")) if (SKILL_DIR / "scenarios").exists() else []
     if len(examples) < 5:
         fail(f"examples/ must contain at least 5 files, found {len(examples)}")
     if len(scenarios) < 5:
@@ -244,7 +245,7 @@ def main() -> int:
         if ".git" in path.parts:
             continue
         for target in relative_links(read(path)):
-            if not (ROOT / target).exists():
+            if not (path.parent / target).exists():
                 fail(f"{path.relative_to(ROOT)} links to missing path: {target}")
 
     # Key content checks

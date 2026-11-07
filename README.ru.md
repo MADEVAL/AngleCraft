@@ -1,6 +1,6 @@
 # AngleCraft - движок контентных перспектив
 
-[![Версия](https://img.shields.io/badge/version-2.1.0-blue)](CHANGELOG.md)
+[![Версия](https://img.shields.io/badge/version-2.2.0-blue)](CHANGELOG.md)
 [![Лицензия](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Углы](https://img.shields.io/badge/angles-7%2B3-orange)](#таксономия-73)
 [![Совместимость](https://img.shields.io/badge/compatibility-plain%20markdown-purple)](#совместимость)
@@ -11,7 +11,7 @@
 
 AngleCraft - AI-скилл, который превращает сухие экспертные темы в контент с высоким вовлечением. Он применяет 7 основных углов и 3 фундаментальные линзы (всего 10), выдаёт хуки и не выдумывает факты: вместо цифр ставит `[X]` и просит заменить их проверенными данными.
 
-**Источник истины:** [`SKILL.md`](SKILL.md). Этот файл - человекочитаемая сводка; агент загружает `SKILL.md`.
+**Источник истины:** [`SKILL.md`](skills/anglecraft/SKILL.md). Этот файл - человекочитаемая сводка; агент загружает `SKILL.md`.
 
 ---
 
@@ -51,7 +51,7 @@ AngleCraft систематизирует выбор ракурса и пише�
 | 9 | **Future Lens** | Куда это идёт через 5-10 лет? | Срочность, видение |
 | 10 | **News Hook** | Реальное событие → мост к уроку | Актуальность |
 
-Полные паттерны, примеры и различение близких углов: [`references/angles.md`](references/angles.md).
+Полные паттерны, примеры и различение близких углов: [`references/angles.md`](skills/anglecraft/references/angles.md).
 
 ---
 
@@ -89,10 +89,12 @@ AngleCraft систематизирует выбор ракурса и пише�
 ### Установка (глобально, совместимо с OpenCode)
 
 ```bash
-git clone https://github.com/MADEVAL/AngleCraft.git ~/.agents/skills/anglecraft
+git clone https://github.com/MADEVAL/AngleCraft.git
+cd AngleCraft
+python install.py --target all
 ```
 
-Другие поддерживаемые расположения:
+`python install.py` копирует `skills/anglecraft/` в поддерживаемые расположения. Для проверки плана: `--list`, `--check` или `--target project --dry-run`. Другие расположения:
 
 | Область | Путь |
 |---|---|
@@ -102,7 +104,7 @@ git clone https://github.com/MADEVAL/AngleCraft.git ~/.agents/skills/anglecraft
 | Claude Code, проект | `.claude/skills/anglecraft/` |
 | Общий `.agents` | `~/.agents/skills/anglecraft/` или `.agents/skills/anglecraft/` |
 
-Имя папки становится ID скилла, поэтому держите его в нижнем регистре: `anglecraft`.
+Для ручной установки скопируйте содержимое `skills/anglecraft/` в целевую папку. Имя папки становится ID скилла, поэтому держите его в нижнем регистре: `anglecraft`.
 
 ### Использование
 
@@ -114,7 +116,7 @@ Quick Mode отвечает без уточняющих вопросов. Есл
 
 Для полной стратегии попросите явно: `Нужна контент-стратегия для B2B SaaS.` Это включит Deep Mode.
 
-Готовые примеры: [`references/examples.md`](references/examples.md).
+Готовые примеры: [`references/examples.md`](skills/anglecraft/references/examples.md).
 
 ---
 
@@ -167,14 +169,17 @@ AngleCraft работает на уровне идей: углы, хуки, ст
 
 ```
 AngleCraft/
-├── SKILL.md                 # рабочий скилл (источник истины)
-├── references/
-│   ├── angles.md            # полная таксономия и примеры
-│   └── examples.md          # готовые Quick/Deep примеры
-├── examples/                # готовые выводы по нишам
-├── scenarios/               # маршрутизация запросов
-├── evals/                   # 20 тестовых тем + рубрика
-├── tests/                   # валидатор структуры
+├── skills/anglecraft/       # рабочий пакет скилла
+│   ├── SKILL.md             # источник истины
+│   ├── references/
+│   │   ├── angles.md        # полная таксономия и примеры
+│   │   └── examples.md      # готовые Quick/Deep примеры
+│   ├── examples/            # готовые выводы по нишам
+│   ├── scenarios/           # маршрутизация запросов
+│   └── agents/openai.yaml   # манифест OpenAI-агента
+├── evals/                   # 20 тестовых тем + рубрика (dev)
+├── tests/                   # валидатор структуры (dev)
+├── install.py               # установщик для Claude, OpenCode, Cursor, .agents
 ├── CHANGELOG.md
 ├── README.md
 ├── README.ru.md
@@ -223,3 +228,15 @@ MIT - свободно использовать, изменять и распр�
 - **[human-ai](https://github.com/MADEVAL/Natural-skill)** - очеловечивание AI-текста (9 языков)
 
 Пайплайн: **AngleCraft** выбирает угол и хук → **MindFluence** усиливает убедительность → **human-ai** убирает AI-голос → **RankWise** отвечает за поисковую видимость.
+
+---
+
+## Описание для GitHub
+
+```
+Превращает сухие экспертные темы в контент с высоким вовлечением через 7 базовых углов + 3 линзы. AI-скилл для любой LLM, любой ниши и любого языка. Skills.sh: https://www.skills.sh/madeval/anglecraft
+```
+
+## Теги для GitHub
+
+`agent-skill` `ai-skill` `anglecraft` `content-creation` `content-marketing` `content-strategy` `copywriting` `infotainment` `llm` `marketing` `newsletter` `prompt-engineering` `social-media` `storytelling`

@@ -1,0 +1,6 @@
+interface:
+  display_name: "AngleCraft"
+  short_description: "Turn a dry expert topic into a content angle and hook"
+  default_prompt: "Give me 3-5 content angles and hooks for this topic."
+policy:
+  allow_implicit_invocation: true
