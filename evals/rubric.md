@@ -25,7 +25,7 @@ A hook passes at **4/6 or higher**, with no criterion at 0.
 - **Angle diversity:** at least three different angle types in Quick Mode; at least two funnel tiers in Deep Mode.
 - **No repetition:** hooks are not paraphrases of each other.
 - **Assumption line:** present when the topic was narrowed or the audience inferred.
-- **Placeholder note:** present whenever `[X]`-style placeholders appear.
+- **Placeholder note:** present whenever `[X]`-style placeholders appear; repeated placeholders are numbered (`[N1]`, `[N2]`) and listed in `Data to verify:`.
 - **Scope:** the output does not silently become a full article; a full-draft request gets an outline plus a question.
 - **Handoff:** SEO, persuasion auditing, and humanization requests are routed to RankWise, MindFluence, and human-ai.
 

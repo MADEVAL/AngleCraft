@@ -5,7 +5,7 @@ license: MIT
 compatibility: Plain Markdown. No external dependencies.
 metadata:
   author: Yevhen Leonidov
-  version: "2.2.0"
+  version: "2.2.1"
   angles: "7+3"
   languages: [any]
   modes: 2
@@ -15,7 +15,7 @@ metadata:
 # AngleCraft - Content Perspective Engine
 
 > **Tagline:** Same topic, different lens. Turn what you know into what they want to consume.
-> **Version:** 2.2.0 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
+> **Version:** 2.2.1 · **Angles:** 7 core + 3 lenses · **Modes:** Quick (default), Deep (on request) · **Language:** any
 
 ---
 
@@ -193,6 +193,7 @@ A hook must pass all three criteria to ship. If it fails any one, revise it or t
 - Never invent statistics, prices, dates, study results, client outcomes, quotes, or expert mechanisms.
 - If a hook needs a number the user did not provide, write a placeholder: `[N]`, `[$N]`, `[timeframe]`, `[source]`.
 - Canonical placeholder vocabulary across the skill set: `[N]` and `[$N]` for missing numbers, `[timeframe]`, `[source]`, `[VERIFY: ...]` for a claim to check, `[DATA NEEDED: ...]` for a missing block of input, `[illustrative]` for hypothetical examples.
+- When the same placeholder appears more than once with different values, number it: `[N1]`, `[N2]`, `[$N1]`, `[$N2]`. List every numbered value in `Data to verify:`.
 - When placeholders are used, add one line: "Replace bracketed placeholders with verified data before publishing."
 - Label hypothetical examples as hypothetical. Never present a made-up case study, testimonial, or benchmark as real.
 - If a claim is central to the angle and cannot be verified or safely generalized, choose a different angle.

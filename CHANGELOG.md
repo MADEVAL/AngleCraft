@@ -2,6 +2,12 @@
 
 All notable changes to AngleCraft are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [2.2.1] - 2026-11-07
+
+### Changed
+- Fact discipline: repeated placeholders are numbered (`[N1]`, `[N2]`, `[$N1]`, `[$N2]`) and listed in `Data to verify:`.
+- The evaluation rubric checks the numbering.
+
 ## [2.2.0] - 2026-11-07
 
 ### Changed

@@ -2,7 +2,7 @@
 
 \[ **English** | [Русский](README.ru.md) \]
 
-[![Version](https://img.shields.io/badge/version-2.2.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.2.1-blue)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Angles](https://img.shields.io/badge/angles-7%2B3-orange)](#the-73-angle-taxonomy)
 [![Compatibility](https://img.shields.io/badge/compatibility-plain%20markdown-purple)](#compatibility)
