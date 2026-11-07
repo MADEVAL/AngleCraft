@@ -234,9 +234,11 @@ MIT - свободно использовать, изменять и распр�
 ## Описание для GitHub
 
 ```
-Превращает сухие экспертные темы в контент с высоким вовлечением через 7 базовых углов + 3 линзы. AI-скилл для любой LLM, любой ниши и любого языка. Skills.sh: https://www.skills.sh/madeval/anglecraft
+Превращает сухие экспертные темы в контент с высоким вовлечением через 7 базовых углов + 3 линзы. AI-скилл для любой LLM, любой ниши и любого языка.
 ```
 
 ## Теги для GitHub
 
 `agent-skill` `ai-skill` `anglecraft` `content-creation` `content-marketing` `content-strategy` `copywriting` `infotainment` `llm` `marketing` `newsletter` `prompt-engineering` `social-media` `storytelling`
+
+Skills.sh: https://www.skills.sh/madeval/anglecraft

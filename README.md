@@ -237,9 +237,11 @@ Pipeline: **AngleCraft** picks the angle and hook → **MindFluence** shapes the
 ## GitHub Description
 
 ```
-Turn dry expert topics into high-engagement content with 7 core angles + 3 foundational lenses. An AI skill for any LLM, any niche, any language. Skills.sh: https://www.skills.sh/madeval/anglecraft
+Turn dry expert topics into high-engagement content with 7 core angles + 3 foundational lenses. An AI skill for any LLM, any niche, any language.
 ```
 
 ## GitHub Tags
 
 `agent-skill` `ai-skill` `anglecraft` `content-creation` `content-marketing` `content-strategy` `copywriting` `infotainment` `llm` `marketing` `newsletter` `prompt-engineering` `social-media` `storytelling`
+
+Skills.sh: https://www.skills.sh/madeval/anglecraft
